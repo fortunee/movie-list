@@ -1,0 +1,13 @@
+{
+  "name": "movie-list",
+  "version": "1.0.0",
+  "description": "An Angularjs Component Based Architecture Displaying a List of Movies with their ratings",
+  "main": "index.js",
+  "repository": "https://github.com/fortunee/movie-list.git",
+  "author": "Fortune Ekeruo <legalmody@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "babel-loader": "^7.1.2",
+    "webpack": "^3.6.0"
+  }
+}
