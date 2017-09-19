@@ -5,6 +5,6 @@ import routes from './index.routes';
 
 export default angular.module('App.components', [uiRouter])
     .config(routes)
-    .component()
-    .service()
+    // .component()
+    // .service()
     .name

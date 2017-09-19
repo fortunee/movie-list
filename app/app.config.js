@@ -1,5 +1,5 @@
 config.$inject = ['$urlRouterProvider'];
 
-export const config = ($urlRouterProvider) => {
+export default function config(urlRouterProvider) {
     $urlRouterProvider.otherwise('/');
 }

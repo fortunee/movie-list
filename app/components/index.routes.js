@@ -1,9 +1,9 @@
 routes.$inject = ['$stateProvider'];
 
-export const routes = ($stateProvider) => {
+export default function routes($stateProvider) {
     $stateProvider
         .state('rootComponent', {
             url: '/',
-            templateUrl: './app/components/index.html',
+            templateUrl: '/app/components/index.template.html',
         });
 }
