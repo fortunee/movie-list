@@ -9,15 +9,31 @@ module.exports = {
         publicPath: '/bin'
     },
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
                 loaders: 'babel-loader',
             },
-            { test: /\.html$/, loader: 'html' },
-            { test: /\.css$/, loaders: 'style!css' }
+
+            { 
+                test: /\.html$/, loader: 'html'
+            },
+            
+            {
+                test: /\.scss$/,
+                loaders: ['style-loader', 'css-loader', 'sass-loader']
+            }
         ]
+        // loaders: [
+        //     {
+        //         test: /\.js$/,
+        //         exclude: /node_modules/,
+        //         loaders: 'babel-loader',
+        //     },
+        //     { test: /\.html$/, loader: 'html' },
+        //     { test: /\.css$/, loaders: 'style!css' }
+        // ]
     },
     devtool: '#inline-source-map'
 }
