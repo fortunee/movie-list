@@ -1,5 +1,6 @@
 const webpack = require('webpack');
 const path = require('path');
+const webpackConfig = require('./webpack.config');
 
 // Karma configuration
 // Generated on Fri Sep 22 2017 10:11:58 GMT+0100 (WAT)
@@ -18,6 +19,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      './spec/specs.webpack.js'
     ],
 
 
@@ -62,7 +64,7 @@ module.exports = function(config) {
 
     // Continuous Integration mode
     // if true, Karma captures browsers, runs the tests and exits
-    singleRun: false,
+    singleRun: true,
 
     // Concurrency level
     // how many browser should be started simultaneous
