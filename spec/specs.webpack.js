@@ -1,5 +1,5 @@
 require('core-js');
-require('core-js-/es5');
+require('core-js/es5');
 require('babel-polyfill');
 
 require('app.module');
