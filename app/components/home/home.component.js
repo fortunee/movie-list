@@ -1,3 +1,5 @@
+import './home.style.scss';
+
 const homeCtrl = () => {
 
 }
