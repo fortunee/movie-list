@@ -1,3 +1,6 @@
+const webpack = require('webpack');
+const path = require('path');
+
 // Karma configuration
 // Generated on Fri Sep 22 2017 10:11:58 GMT+0100 (WAT)
 
