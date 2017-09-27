@@ -1,5 +1,8 @@
-const homeCtrl = () => {
+import './home.style.scss';
 
+const homeCtrl = () => {
+    const homeTitle = 'Home Controller!!!';
+    console.log('Logging homeTitle::', homeTitle)
 }
 
 export const homeComponent = {
