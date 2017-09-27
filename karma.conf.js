@@ -19,7 +19,7 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      './spec/specs.webpack.js'
+      './spec/specs.webpack.js',
     ],
 
 
@@ -31,9 +31,19 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      './spec/specs.webpack.js': ['webpack', 'sourcemap'],
+      './spec/specs.webpack.js': ['ng-html2js', 'webpack', 'sourcemap'],
+      // './app/**/*.html' : ['ng-html2js']
     },
 
+    // ng-html2js creates a "templates" module
+    // and put the HTML into the $templateCache
+    // because Angular security blocks execution of
+    // $compile(...) as it considers the templateUrl path
+    // as a cross domain request
+    ngHtml2JsPreprocessor: {
+      // stripPrefix: 'app/',
+      moduleName: 'templates'
+    },
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
