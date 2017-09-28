@@ -17,6 +17,7 @@ class movieRatingCtrl {
 
 export const movieRatingComponent = {
     templateUrl: './app/components/shared/move-rating.template.html',
+    transclude: true,
     controllerAs: 'mvMovieRating',
     controller: movieRatingCtrl,
     bindings: {
