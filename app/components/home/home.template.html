@@ -13,13 +13,14 @@
                     <th>Length</th>
                     <th>Rating</th>
                     <th>
-                        <movie-rating-component></movie-rating-component>
                     </th>
                 </tr>
                 <tr ng-repeat="movie in model.movies">
                     <td>{{movie.title}}</td>
                     <td>{{movie.length}}</td>
-                    <td>{{movie.rating}}</td>
+                    <td>
+                        <movie-rating-component value="movie.rating"></movie-rating-component value="movie.rating">
+                    </td>
                     <td>
                         <div class="btn-group">
                             <button class="btn btn-default" ng-click="model.rateUp(movie)">
