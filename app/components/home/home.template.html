@@ -18,7 +18,16 @@
                     <td>{{movie.title}}</td>
                     <td>{{movie.length}}</td>
                     <td>{{movie.rating}}</td>
-                    <td></td>
+                    <td>
+                        <div class="btn-group">
+                            <button class="btn btn-default" ng-click="model.rateUp()">
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </button>
+                            <button class="btn btn-default" ng-click="model.rateDown()">
+                                <span class="glyphicon glyphicon-minus"></span>
+                            </button>
+                        </div>
+                    </td>
                 </tr>
             </table>
 
