@@ -6,13 +6,27 @@
     <div class="panel panel-primary">
         <div class="panel-heading">Status</div>
         <div class="panel-body">
-        <h3>Home</h3>
+            <h3>Home</h3>
+            <table class="table">
+                <tr>
+                    <th>Title</th>
+                    <th>Length</th>
+                    <th>Rating</th>
+                    <th></th>
+                </tr>
+                <tr ng-repeat="movie in model.movies">
+                    <td>{{movie.title}}</td>
+                    <td>{{movie.length}}</td>
+                    <td>{{movie.rating}}</td>
+                    <td></td>
+                </tr>
+            </table>
 
-        <p>{{ model.message }}</p>
-        <input class="form-control" type="text" ng-model="model.message"> <br>
-        <button  class="btn btn-default" ng-click="model.changeMessage()">
-            Change message
-        </button>
+            <p>{{ model.message }}</p>
+            <input class="form-control" type="text" ng-model="model.message"> <br>
+            <button  class="btn btn-default" ng-click="model.changeMessage()">
+                Change message
+            </button>
         </div>
     </div>
 </div>

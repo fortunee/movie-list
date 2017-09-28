@@ -1,13 +1,27 @@
 import './home.style.scss';
 
 class homeCtrl {
-    constructor() {
-        this.message = 'home controller as VM';
+    constructor($http) {
+        'ngInject';
+        angular.extend(this, {$http})
+        // this._$http = $http;
+        this.movies = [];
+    }
+    
+    $onInit() {
+        this.message = 'foo';
+        this.fetchMovies().then((movies) => {
+            this.movies = movies;
+        })
     }
 
-    changeMessage() {
-        this.message = 'Another message';
+    fetchMovies() {
+        return this.$http.get('api/movies.json')
+            .then((res) => {
+                return res.data;
+            });
     }
+    
 }
 
 export const homeComponent = {
