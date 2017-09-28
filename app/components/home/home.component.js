@@ -4,7 +4,6 @@ class homeCtrl {
     constructor($http) {
         'ngInject';
         angular.extend(this, {$http})
-        // this._$http = $http;
         this.movies = [];
     }
     
@@ -21,7 +20,12 @@ class homeCtrl {
                 return res.data;
             });
     }
-    
+
+    rateUp(movie) {
+        if(movie.rating < 5) {
+            movie.rating += 1;
+        }
+    }
 }
 
 export const homeComponent = {
