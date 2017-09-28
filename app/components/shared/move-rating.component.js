@@ -9,6 +9,10 @@ class movieRatingCtrl {
     $onInit() {
         this.entries = new Array(this.value)
     }
+
+    $onChanges() {
+        this.entries = new Array(this.value)
+    }
 }
 
 export const movieRatingComponent = {
