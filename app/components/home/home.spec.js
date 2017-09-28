@@ -3,7 +3,7 @@ import { homeComponent } from './home.component';
 describe('Home Component', () => {
 
     beforeEach(angular.mock.module('MovieList'));
-    beforeEach(angular.mock.module('templates'));
+    // beforeEach(angular.mock.module('templates'));
     let element;
     let scope;
 
