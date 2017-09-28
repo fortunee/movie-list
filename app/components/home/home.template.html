@@ -8,8 +8,11 @@
         <div class="panel-body">
         <h3>Home</h3>
 
-        <p>{{ vm.message }}</p>
-        <p>{{ vm.home }}</p>
+        <p>{{ model.message }}</p>
+        <input class="form-control" type="text" ng-model="model.message"> <br>
+        <button  class="btn btn-default" ng-click="model.changeMessage()">
+            Change message
+        </button>
         </div>
     </div>
 </div>
