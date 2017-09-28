@@ -26,6 +26,13 @@ class homeCtrl {
             movie.rating += 1;
         }
     }
+
+    rateDown(movie) {
+        if(movie.rating > 1) {
+            movie.rating -= 1;
+        }
+    }
+    
 }
 
 export const homeComponent = {
