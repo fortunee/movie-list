@@ -8,12 +8,10 @@ export default function routes($stateProvider) {
         })
         .state('moviesComponentState', {
             url: '/list',
-            template: '<movies-component></movies-component>',
-            // component: 'moviesComponent'
+            component: 'moviesComponent'
         })
         .state('aboutComponentState', {
             url: '/about',
-            template: '<about-component></about-component>'
-            // component: 'aboutComponent'
+            component: 'aboutComponent'
         })
 }
