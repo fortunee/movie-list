@@ -11,7 +11,7 @@ export default function routes($stateProvider) {
             template: '<movies-component></movies-component>',
             // component: 'moviesComponent'
         })
-        .state('aboutComponet', {
+        .state('aboutComponentState', {
             url: '/about',
             template: '<about-component></about-component>'
             // component: 'aboutComponent'
