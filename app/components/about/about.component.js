@@ -7,7 +7,7 @@ class AboutCtrl {
 
 
 export const aboutComponent = {
-    templateUrl: './app/component/about/about.template.html',
+    templateUrl: './app/components/about/about.template.html',
     controllerAs: 'model',
     controller: AboutCtrl
 }
