@@ -2,12 +2,18 @@ routes.$inject = ['$stateProvider'];
 
 export default function routes($stateProvider) {
     $stateProvider
-        .state('rootComponent', {
+        .state('rootComponentState', {
             url: '/',
             templateUrl: './app/components/index.template.html',
         })
-        .state('moviesComponent', {
+        .state('moviesComponentState', {
             url: '/list',
-            template: '<movies-component></movies-component>'
-        });
+            template: '<movies-component></movies-component>',
+            // component: 'moviesComponent'
+        })
+        .state('aboutComponet', {
+            url: '/about',
+            template: '<about-component></about-component>'
+            // component: 'aboutComponent'
+        })
 }
