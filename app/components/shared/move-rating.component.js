@@ -1,4 +1,4 @@
-class movieRatingCtrl {
+class MovieRatingCtrl {
     constructor() {
         'ngInject';
         angular.extend(this);
@@ -19,7 +19,7 @@ export const movieRatingComponent = {
     templateUrl: './app/components/shared/move-rating.template.html',
     transclude: true,
     controllerAs: 'mvMovieRating',
-    controller: movieRatingCtrl,
+    controller: MovieRatingCtrl,
     bindings: {
         value: "<",
     }
