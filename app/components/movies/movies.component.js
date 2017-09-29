@@ -1,6 +1,6 @@
-import './home.style.scss';
+import './movies.style.scss';
 
-class homeCtrl {
+class MoviesCtrl {
     constructor($http) {
         'ngInject';
         angular.extend(this, {$http})
@@ -35,10 +35,10 @@ class homeCtrl {
     
 }
 
-export const homeComponent = {
-    templateUrl: './app/components/home/home.template.html',
+export const moviesComponent = {
+    templateUrl: './app/components/movies/movies.template.html',
     controllerAs: "model",
-    controller: homeCtrl,
+    controller: MoviesCtrl,
     bindings: {
         home: '='
     }

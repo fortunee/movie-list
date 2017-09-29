@@ -6,8 +6,8 @@ export default function routes($stateProvider) {
             url: '/',
             templateUrl: './app/components/index.template.html',
         })
-        .state('homeComponent', {
+        .state('moviesComponent', {
             url: '/list',
-            template: '<home-component></home-component>'
+            template: '<movies-component></movies-component>'
         });
 }

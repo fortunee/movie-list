@@ -4,6 +4,6 @@ export default function routes($stateProvider) {
     $stateProvider
         .state('home', {
             url: '/',
-            templateUrl: './app/components/home/home.template.html'
+            templateUrl: './app/components/movies/movies.template.html'
         })
 }
