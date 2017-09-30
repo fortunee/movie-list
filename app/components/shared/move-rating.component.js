@@ -31,7 +31,8 @@ export const movieRatingComponent = {
     controllerAs: 'mvMovieRating',
     controller: MovieRatingCtrl,
     bindings: {
-        value: "<",
-        maxRating: '<'
+        value: '<',
+        maxRating: '<',
+        setRating: '&'
     }
 }
