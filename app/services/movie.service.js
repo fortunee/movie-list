@@ -1,5 +1,5 @@
 export default class FetchMoviesService {
-    constructor() {
-
+    constructor($http) {
+        this.$http = $http;
     }
 }
