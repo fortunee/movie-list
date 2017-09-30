@@ -1,26 +1,19 @@
 import './movies.style.scss';
 
 class MoviesCtrl {
-    constructor($http) {
+    constructor(MovieService) {
         'ngInject';
         angular.extend(this, {
-            $http
+            MovieService
         })
         this.movies = [];
     }
 
     $onInit() {
         this.message = 'foo';
-        this.fetchMovies().then((movies) => {
+        this.MovieService.fetchMovies().then((movies) => {
             this.movies = movies;
         })
-    }
-
-    fetchMovies() {
-        return this.$http.get('api/movies.json')
-            .then((res) => {
-                return res.data;
-            });
     }
 
     rateUp(movie) {
