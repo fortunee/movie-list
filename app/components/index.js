@@ -4,7 +4,7 @@ import uiRouter from 'angular-ui-router';
 import routes from './index.routes';
 
 // Services
-import { MovieService } from './../services/movie.service';
+import MovieService from './../services/movie.service';
 
 // Components
 import { moviesComponent } from './movies/movies.component';

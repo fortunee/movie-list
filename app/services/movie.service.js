@@ -5,6 +5,6 @@ export default class MovieService {
 
     fetchMovies() {
         const endPoint = 'api/movies.json';
-        return this.$http.get(endPoint);
+        return this.$http.get(endPoint).then(res => res.data);
     }
 }
