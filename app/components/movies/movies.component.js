@@ -22,6 +22,12 @@ class MoviesCtrl {
         }
     }
 
+    setRating(movie, newRating) {
+        if (newRating > 0 && newRating <= 5) {
+           return movie.rating = newRating;
+        }
+    }
+
     rateDown(movie) {
         if (movie.rating > 1) {
             movie.rating -= 1;

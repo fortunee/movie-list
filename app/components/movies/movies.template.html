@@ -17,8 +17,9 @@
                     <td>{{movie.title}}</td>
                     <td>{{movie.length}}</td>
                     <td>
-                        <movie-rating-component value="movie.rating">
-                            <span class="glyphicon glyphicon-star"></span>                                
+                        <movie-rating-component value="movie.rating" 
+                                                max-rating="5"
+                                                set-rating="model.setRating(movie, value)">
                         </movie-rating-component>
                     </td>
                     <td>
