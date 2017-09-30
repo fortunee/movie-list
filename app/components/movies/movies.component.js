@@ -1,10 +1,9 @@
 import './movies.style.scss';
 
 class MoviesCtrl {
-    constructor($http, MovieService) {
+    constructor(MovieService) {
         'ngInject';
         angular.extend(this, {
-            $http,
             MovieService
         })
         this.movies = [];
@@ -34,7 +33,7 @@ class MoviesCtrl {
 export const moviesComponent = {
     templateUrl: './app/components/movies/movies.template.html',
     controllerAs: "model",
-    controller: ['$http', 'MovieService', MoviesCtrl],
+    controller: MoviesCtrl,
     bindings: {
         home: '='
     }
