@@ -4,7 +4,7 @@ import uiRouter from 'angular-ui-router';
 import routes from './index.routes';
 
 // Services
-import { MovieServices } from './../services/movie.service';
+import { MovieService } from './../services/movie.service';
 
 // Components
 import { moviesComponent } from './movies/movies.component';
@@ -24,4 +24,5 @@ export default angular.module('App.components', [uiRouter])
     .component('movieRatingComponent', movieRatingComponent)
     .component('navBarComponent', navBarComponent)
     .component('footerComponent', footerComponent)
+    .service('MovieService', MovieServices)
     .name
