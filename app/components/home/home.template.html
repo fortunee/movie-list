@@ -6,9 +6,41 @@
     <div class="panel panel-primary">
         <div class="panel-heading">Status</div>
         <div class="panel-body">
-        <h3>Home</h3>
+            <h3>Home</h3>
+            <table class="table">
+                <tr>
+                    <th>Title</th>
+                    <th>Length</th>
+                    <th>Rating</th>
+                    <th>
+                    </th>
+                </tr>
+                <tr ng-repeat="movie in model.movies">
+                    <td>{{movie.title}}</td>
+                    <td>{{movie.length}}</td>
+                    <td>
+                        <movie-rating-component value="movie.rating">
+                            <span class="glyphicon glyphicon-star"></span>                                
+                        </movie-rating-component>
+                    </td>
+                    <td>
+                        <div class="btn-group">
+                            <button class="btn btn-default" ng-click="model.rateUp(movie)">
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </button>
+                            <button class="btn btn-default" ng-click="model.rateDown(movie)">
+                                <span class="glyphicon glyphicon-minus"></span>
+                            </button>
+                        </div>
+                    </td>
+                </tr>
+            </table>
 
-        <p>{{home}}</p>
+            <p>{{ model.message }}</p>
+            <input class="form-control" type="text" ng-model="model.message"> <br>
+            <button  class="btn btn-default" ng-click="model.changeMessage()">
+                Change message
+            </button>
         </div>
     </div>
 </div>
