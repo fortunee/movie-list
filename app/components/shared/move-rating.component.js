@@ -14,6 +14,15 @@ class MovieRatingCtrl {
     $onChanges() {
         this.entries = new Array(this.maxRating)
     }
+
+    buildEntries(value, max) {
+        let entries = [];
+        for(let i = 1; i <= max; i++) {
+            let icon = i <= value ? 'glyphicon-star' : 'glyphicon-star-empty';
+            entries.push(icon)
+        }
+        return entries;
+    }
 }
 
 export const movieRatingComponent = {
