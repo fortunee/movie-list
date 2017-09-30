@@ -1,4 +1,4 @@
-import { homeComponent } from './home.component';
+import { moviesComponent } from './movies.component';
 
 describe('Home Component', () => {
 
