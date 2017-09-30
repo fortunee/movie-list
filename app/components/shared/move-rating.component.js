@@ -4,6 +4,7 @@ class MovieRatingCtrl {
         angular.extend(this);
         this.entries;
         this.value;
+        this.maxRating;
     }
 
     $onInit() {
