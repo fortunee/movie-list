@@ -7,11 +7,11 @@ class MovieRatingCtrl {
     }
 
     $onInit() {
-        this.entries = new Array(this.value)
+        this.entries = new Array(this.maxRating)
     }
 
     $onChanges() {
-        this.entries = new Array(this.value)
+        this.entries = new Array(this.maxRating)
     }
 }
 
@@ -22,5 +22,6 @@ export const movieRatingComponent = {
     controller: MovieRatingCtrl,
     bindings: {
         value: "<",
+        maxRating: '<'
     }
 }
