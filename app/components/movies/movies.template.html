@@ -17,7 +17,9 @@
                     <td>{{movie.title}}</td>
                     <td>{{movie.length}}</td>
                     <td>
-                        <movie-rating-component value="movie.rating" max-rating="5">
+                        <movie-rating-component value="movie.rating" 
+                                                max-rating="5"
+                                                set-rating="model.setRating(movie, value)">
                         </movie-rating-component>
                     </td>
                     <td>
