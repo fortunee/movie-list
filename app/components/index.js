@@ -24,5 +24,5 @@ export default angular.module('App.components', [uiRouter])
     .component('movieRatingComponent', movieRatingComponent)
     .component('navBarComponent', navBarComponent)
     .component('footerComponent', footerComponent)
-    .service('MovieService', MovieServices)
+    .service('MovieService', MovieService)
     .name
