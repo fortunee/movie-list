@@ -1,4 +1,4 @@
-export class FetchMoviesService {
+export default class FetchMoviesService {
     constructor() {
 
     }
