@@ -12,7 +12,7 @@ class MovieRatingCtrl {
     }
 
     $onChanges() {
-        this.entries = new Array(this.maxRating)
+        this.entries = this.buildEntries(this.value, this.maxRating);
     }
 
     buildEntries(value, max) {
